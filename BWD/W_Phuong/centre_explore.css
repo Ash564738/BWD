@@ -5,27 +5,29 @@
 
 /* main */
 .container{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(./img/container/thanhhoa_container.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./img/container/thanhhoa_container.jpg);
     background-position: center;
     background-size: cover;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .TH{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 .NA{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 .row{
     display: flex;
-    height: 110%;
+    flex-wrap: nowrap;
     align-items: center;
+    width: 100%;
 }
 .col{
     flex-basis: 50%;
@@ -117,4 +119,266 @@ h5{
 .card p{
     text-shadow: 0 0 15px #000;
     font-size: 8px;
+}
+/* @media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 4%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .card {
+        height: 220px;
+    }
+
+    .control {
+        justify-content: center;
+    }
+
+    .control button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    button {
+        width: 150px;
+        font-size: 0.875rem;
+        margin-top: 15px;
+    }
+
+    .card {
+        height: 180px;
+        margin: 10px;
+    }
+
+    .control button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.625rem;
+    }
+
+    button {
+        width: 120px;
+        font-size: 0.75rem;
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .control button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+} */
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 4%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .card {
+        height: 220px;
+    }
+
+    .control {
+        justify-content: center;
+    }
+
+    .control button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    button {
+        width: 150px;
+        font-size: 0.875rem;
+        margin-top: 15px;
+    }
+
+    .card {
+        height: 180px;
+        margin: 10px;
+    }
+
+    .control button {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1%;
+    }
+    .row {
+        flex-wrap: wrap;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.625rem;
+    }
+
+    button {
+        width: 120px;
+        font-size: 0.75rem;
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .control button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width < 480px) {
+    .container {
+        padding: 0 1%;
+    }
+    .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+    } 
+
+    p {
+        font-size: 0.625rem;
+    }
+
+    button {
+        width: 120px;
+        font-size: 0.75rem;
+    }
+
+    .card {
+        height: 180px;
+    }
+
+    .control button {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
